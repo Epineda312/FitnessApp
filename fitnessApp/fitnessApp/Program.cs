@@ -10,8 +10,8 @@ namespace fitnessApp
     {
         static void Main(string[] args)
         {
-           //Variables
-        int runningTotal = 0;
+          //Variables
+        double runningTotal = 0;
         bool keepGoing = true;
           
         //Loop Starts
@@ -24,7 +24,7 @@ namespace fitnessApp
           string entry = Console.ReadLine();
           
           //Main Logic Loop
-          if(entry == "quit")
+          if(entry.ToLower() == "quit")
           {
             keepGoing = false;
           }
@@ -34,7 +34,7 @@ namespace fitnessApp
             try
             {
                 //Parse the user input to hold as an integer
-                int minutes = int.Parse(entry);
+                double minutes = double.Parse(entry);
                 
                 if(minutes <= 0)
               {
@@ -74,3 +74,4 @@ namespace fitnessApp
        }
     }
   } 
+  
