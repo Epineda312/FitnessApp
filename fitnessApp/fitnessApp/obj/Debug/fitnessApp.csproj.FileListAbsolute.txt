@@ -1,0 +1,7 @@
+C:\Users\syrup\source\repos\fitnessApp\fitnessApp\obj\Debug\fitnessApp.csprojAssemblyReference.cache
+C:\Users\syrup\source\repos\fitnessApp\fitnessApp\obj\Debug\fitnessApp.csproj.CoreCompileInputs.cache
+C:\Users\syrup\source\repos\fitnessApp\fitnessApp\bin\Debug\fitnessApp.exe.config
+C:\Users\syrup\source\repos\fitnessApp\fitnessApp\bin\Debug\fitnessApp.exe
+C:\Users\syrup\source\repos\fitnessApp\fitnessApp\bin\Debug\fitnessApp.pdb
+C:\Users\syrup\source\repos\fitnessApp\fitnessApp\obj\Debug\fitnessApp.exe
+C:\Users\syrup\source\repos\fitnessApp\fitnessApp\obj\Debug\fitnessApp.pdb
