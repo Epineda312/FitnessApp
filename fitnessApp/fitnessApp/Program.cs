@@ -10,33 +10,67 @@ namespace fitnessApp
     {
         static void Main(string[] args)
         {
-            int runningTotal = 0;
-
-            bool keepGoing = true;
-            while (keepGoing)
+           //Variables
+        int runningTotal = 0;
+        bool keepGoing = true;
+          
+        //Loop Starts
+        while(keepGoing)
+        {
+          //Prompt the user for minutes exercised
+          Console.Write("Enter how many minutes you exercised or type \"quit\" to exit: ");         
+          
+          //Take user input and set it as a variable
+          string entry = Console.ReadLine();
+          
+          //Main Logic Loop
+          if(entry == "quit")
+          {
+            keepGoing = false;
+          }
+          else
+          {                      
+            //Try Catch Block Starts
+            try
             {
-                // Prompt user for minutes exercised 
-                Console.Write("Enter how many minutes you exercised or type \"quit\" to exit: ");
-                string entry = Console.ReadLine();
-
-                if (entry == "quit")
-                {
-                    keepGoing = false;
-                }
-                else
-                {
-                    // Add minutes exercised to total 
-                    int minutes = int.Parse(entry);
-                    runningTotal = runningTotal + minutes;
-
-                    // Display total minutes exercised to the screen 
-                    Console.WriteLine("You've entered " + runningTotal + " minutes.");
-                }
-                // Repeat until user quits
+                //Parse the user input to hold as an integer
+                int minutes = int.Parse(entry);
+                
+                if(minutes <= 0)
+              {
+                Console.WriteLine(minutes + " is not an acceptable value.");
+                continue;
+              }
+              if(minutes <= 10)
+              {
+                Console.WriteLine("Better than nothing, am I Right?");
+              }
+              else if(minutes <= 30)
+              {
+                Console.WriteLine("Way to go hot stuff!");
+              }
+              else if(minutes <= 60)
+              {
+                Console.WriteLine("you must be a ninja warrior in training!");
+              }
+              else
+              {
+                Console.WriteLine("Okay, now your just showing off!");
+              }
+              //Add minutes exercised to total
+              runningTotal = runningTotal + minutes;
             }
-
-            Console.WriteLine("Goodbye");
-
-        }
-        }
-}
+            catch(FormatException)
+            {
+              Console.WriteLine("That was not valid input.");
+              continue;
+            }                                     
+            //Display total minutes exercised to the screen
+            Console.WriteLine("You've entered " + runningTotal + " minutes");      
+           }            
+         }
+          //Text Displayed When User Quits 
+          Console.WriteLine("GoodBye");
+       }
+    }
+  } 
