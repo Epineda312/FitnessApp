@@ -43,15 +43,15 @@ namespace fitnessApp
               }
               if(minutes <= 10)
               {
-                Console.WriteLine("Better than nothing, am I Right?");
+                Console.WriteLine("Better than nothing");
               }
               else if(minutes <= 30)
               {
-                Console.WriteLine("Way to go hot stuff!");
+                Console.WriteLine("Way to go!");
               }
               else if(minutes <= 60)
               {
-                Console.WriteLine("you must be a ninja warrior in training!");
+                Console.WriteLine("Ninja in training!");
               }
               else
               {
@@ -70,7 +70,7 @@ namespace fitnessApp
            }            
          }
           //Text Displayed When User Quits 
-          Console.WriteLine("GoodBye");
+          Console.WriteLine("see ya!");
        }
     }
   } 
